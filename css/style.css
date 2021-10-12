@@ -1,0 +1,107 @@
+:root {
+  --normal-black: #000;
+  --normal-white: #FFF;
+  --roman-red: #CD0000;
+  --scottish-blue: #0065bd;
+  --eleganBlue: #427ed1;
+  --lighter-blue: #4c8be0;
+  --darker-yellow: #ffaf00;
+  --coral-red: #FF7F50;
+  --emerald-green: #00C957;
+  --slate-blue: #7171C6;
+  --medium-purple: #8968CD;
+  --midnight-blue: #191970;
+  --aqua: #00FFFF;
+  --ruby-red: #e0115f;
+  --scarlet-red: #ff2400;
+  --gen-lightblue: #28c9d0;
+  --gen-purple: #6d168c;
+  --gen-aqua: #00ffb8;
+  --gen-fuchsia: #ff2b7c;
+  --gen-blue: #0000ee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background: #0a2a43;
+  min-height: 1500px;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section:before {
+  content:"";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #0a2a43, transparent);
+  z-index: 10000;
+}
+
+section:after {
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0a2a43;
+  z-index: 10000;
+  mix-blend-mode: color;
+}
+
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+
+}
+
+#text {
+  position: relative;
+  color: #fff;
+  font-size: 10em;
+  z-index: 1;
+  padding-bottom: 100px;
+}
+
+#road {
+  z-index: 2;
+}
+
+article div h1 {
+  padding-bottom: 20px;
+}
+article div h1,
+article div p {
+  color: white;
+}
